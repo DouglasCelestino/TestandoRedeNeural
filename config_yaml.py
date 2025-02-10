@@ -21,8 +21,8 @@ def train_model():
 
     model.train(
         data="D:/8Semestre/PFE/TestandoRedeNeural/dataset/PPE_cdp.v1-model.yolov8/data.yaml",
-        epochs=10,  # Aumentando para aprendizado melhor
-        imgsz=640,
+        epochs=5,  # Aumentando para aprendizado melhor
+        imgsz=1024,
         batch=4,  # Reduzindo batch para evitar estouro de VRAM
         workers=2,  # Menos workers para evitar sobrecarga
         device="cuda",  # Agora forçando uso da GPU 
